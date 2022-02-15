@@ -7,7 +7,7 @@ body {
     font-family: "Quicksand", sans-serif;
     font-size: 62.5%;
     font-size: 10px;
-    background-image: url('assests/background.jpg');
+    background-image: url('assests/background (2).jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -28,12 +28,12 @@ body {
 
 .nav div.logo a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
     font-size: 2.5rem;
 }
 
 .nav div.logo a:hover {
-    color: #00E676;
+    color: #3bb3eb;
 }
 
 .nav div.main_list {
@@ -59,13 +59,13 @@ body {
 
 .nav div.main_list ul li a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
     line-height: 65px;
     font-size: 2.4rem;
 }
 
 .nav div.main_list ul li a:hover {
-    color: #00E676;
+    color: #3bb3eb;
 }
 
 .button{

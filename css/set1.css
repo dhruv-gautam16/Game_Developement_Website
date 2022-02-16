@@ -1,0 +1,319 @@
+
+.grid {
+	position: relative;
+
+	text-align: center;
+}
+
+
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin:0px;
+	
+	width: 100%;
+	background: #ff0050;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+    padding: 1.3em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+figure.effect-moses {
+	background: -webkit-linear-gradient(-45deg, #EC65B7 0%,#05E0D8 100%);
+	background: linear-gradient(-45deg, #EC65B7 0%,#05E0D8 100%);
+}
+
+figure.effect-moses img {
+	opacity: 0.85;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.effect-moses h4,
+figure.effect-moses p {
+	padding: 20px;
+	width: 50%;
+	height: 50%;
+	border: 2px solid #fff;
+}
+
+figure.effect-moses h4 {
+      padding: 35px 23px;
+    width: 55%;
+    height: 55%;
+	text-align: left;
+	    font-size: 23px;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(10px,10px,0);
+	transform: translate3d(10px,10px,0);
+}
+
+figure.effect-moses p {
+	float: right;
+   padding: 48px 10px;
+    text-align: right;
+    font-size: 12px;
+    opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+figure.effect-moses:hover h4 {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-moses:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-moses:hover img {
+	opacity: 0.6;
+}
+
+@media screen and (max-width: 50em) {
+	.content {
+		padding: 0 10px;
+		text-align: center;
+	}
+}
+
+@media(max-width:1920px){
+	
+}
+@media(max-width:1680px){
+	
+}
+@media(max-width:1600px){
+	
+}
+@media(max-width:1440px){
+	figure.effect-moses h4 {
+    padding: 26px 23px;
+	}
+	figure.effect-moses p {
+    padding: 42px 10px;
+	}
+	figure.effect-moses h4 {
+    width: 52%;
+    height: 52%;
+    font-size: 21px;
+	}
+}
+@media(max-width:1366px){
+	figure.effect-moses p {
+    padding: 38px 10px;
+}
+}
+@media(max-width:1280px){
+	figure.effect-moses p {
+    padding: 27px 10px;
+}
+figure.effect-moses h4 {
+    padding: 19px 20px;
+}
+}
+@media(max-width:1080px){
+figure.effect-moses h4 {
+ padding: 12px 8px;
+}
+figure.effect-moses h4 {
+    width: 58%;
+    height: 59%;
+    font-size: 20px;
+}
+figure.effect-moses p {
+    padding: 14px 8px;
+}
+}
+@media(max-width:1050px){
+	.grid figure figcaption {
+    padding: 1em 1em;
+	}
+	figure.effect-moses h4 {
+    width: 52%;
+    height: 51%;
+    font-size: 20px;
+}
+}
+@media(max-width:1024px){
+}
+@media(max-width:991px){
+	
+}
+@media(max-width:900px){
+.grid figure figcaption {
+    padding: .6em .5em;
+}	
+}
+@media(max-width:800px){
+figure.effect-moses h4 {
+	padding: 8px 8px;
+    width: 52%;
+    height: 51%;
+    font-size: 17px;
+}	
+figure.effect-moses p {
+    padding: 9px 2px;
+}
+}
+@media(max-width:768px){
+ figure.effect-moses p {
+    width: 56%;
+    height: 51%;
+}
+figure.effect-moses h4 {
+    padding: 6px 8px;
+    width: 55%;
+}
+}
+@media(max-width:767px){
+	figure.effect-milo p {
+    width: 80%;
+	}
+	figure.effect-moses {
+    margin: 0px auto;
+    width: 83%;
+    float: none;
+}
+.gallery-grids {
+    margin: 10px 0px;
+}
+figure.effect-moses h4 {
+    padding: 56px 37px;
+}
+figure.effect-moses p {
+    padding: 70px 55px;
+}
+}
+@media(max-width:736px){
+	
+}
+@media(max-width:667px){
+figure.effect-moses {
+    width: 90%;	
+}
+}
+@media(max-width:640px){
+	
+}
+@media(max-width:600px){
+	figure.effect-moses h4 {
+    padding: 43px 37px;
+}
+figure.effect-moses p {
+    padding: 61px 48px;
+}
+}
+@media(max-width:568px){
+	
+}
+@media(max-width:480px){
+figure.effect-moses {
+    width: 95%;
+}
+figure.effect-moses p {
+    padding: 44px 33px;
+}
+
+figure.effect-moses h4 {
+    padding: 31px 34px;
+}	
+}
+@media(max-width:440px){
+figure.effect-moses p {
+    padding: 37px 20px;
+}	
+}
+@media(max-width:414px){
+	figure.effect-moses h4 {
+    padding: 25px 26px;
+}
+figure.effect-moses p {
+    padding: 30px 12px;
+}
+
+
+}
+@media(max-width:384px){
+	figure.effect-moses {
+    width: 100%;
+}
+figure.effect-moses h4 {
+    padding: 22px 21px;
+}
+}
+@media(max-width:375px){
+	figure.effect-moses p {
+    padding: 31px 9px;
+}
+}
+@media(max-width:320px){
+figure.effect-moses h4 {
+    padding: 13px 12px;
+}	
+}
+

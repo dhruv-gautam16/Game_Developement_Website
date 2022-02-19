@@ -1,0 +1,83 @@
+img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+
+  -webkit-box-reflect: below 2px
+    linear-gradient(transparent, transparent, #0004);
+
+  transform-origin: center;
+  transform: perspective(800px) rotateY(25deg);
+  transition: 0.5s;
+}
+.container1 {
+  max-width: 100%;
+  max-height: 350px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+.container1:hover img {
+  opacity: 0.3;
+}
+.container1 img:hover {
+  transform: perspective(800px) rotateY(0deg) scale(1.2, 1.2);
+  opacity: 1;
+}
+
+#btn {
+  background: #222;
+  height: 50px;
+  width: 250px;
+  border: none;
+  border-radius: 10px;
+  color: #eee;
+  font-size: 40px;
+  font-family: "Cookie", cursive;
+  position: relative;
+  transition: 1s;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-top: 5px;
+  margin-left: 640px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+#btn #circle {
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  transition: 500ms;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#btn:hover {
+  background: transparent;
+}
+
+#btn:hover #circle {
+  height: 50px;
+  width: 250px;
+  left: 0;
+  border-radius: 0;
+  border-bottom: 2px solid #eee;
+}
